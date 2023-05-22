@@ -275,7 +275,7 @@ VALUES
   (10, 10);
 
 -- Tabela de tipos de quarto
-INSERT INTO QuartoTipo (nome, descricao)
+INSERT INTO Quarto(nome, descricao)
 VALUES
   ('Apartamento', 'Quarto individual com banheiro privativo'),
   ('Quarto Duplo', 'Quarto compartilhado por duas pessoas'),
