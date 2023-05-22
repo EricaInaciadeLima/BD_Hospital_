@@ -288,6 +288,14 @@ VALUES
   ('Convênio B', '22222222222222', 60),
   ('Convênio C', '33333333333333', 90);
 
+-- Adicionar coluna "em_atividade" na tabela "Medico"
+ALTER TABLE Medico
+ADD COLUMN em_atividade BOOLEAN NOT NULL DEFAULT TRUE;
+
+-- Atualizar status de atividade de dois médicos para inativo
+UPDATE Medico
+SET em_atividade = FALSE
+WHERE id IN (1, 2);
 
 
 
